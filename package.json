@@ -1,0 +1,22 @@
+{
+  "name": "christmas-d-day",
+  "version": "0.0.3",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "prepack": "pnpm build",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.1"
+  }
+}
